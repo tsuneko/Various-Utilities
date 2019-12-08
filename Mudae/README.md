@@ -4,8 +4,8 @@ Usage:
 
 1. Create a waifulist.txt file and populate it with characters from Mudae, in the order you wish to sort them by.
 
-Megumi Katou - Saenai Heroine no Sodatekata
-Remilia Scarlet - Touhou Project (Windows Canon)
+```Megumi Katou - Saenai Heroine no Sodatekata
+Remilia Scarlet - Touhou Project (Windows Canon)```
 
 2. Use the command $mms and copy and paste the output sent to mms_output.txt
 
