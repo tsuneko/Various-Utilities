@@ -41,7 +41,7 @@ for i in range(len(waifulist)):
 commandsFile.write("\n\n")
 
 commandsFile.write("Sort\n")
-commandsFile.write("$sm note " + "$".join(list(map(lambda x: "Rank " + str(x+1), ownedwaifuranks))))  
+commandsFile.write("$sm note " + "$".join(list(map(lambda x: "Rank " + str(x+1), sorted(ownedwaifuranks)))))  
 commandsFile.close()
 
 print("Done.")
