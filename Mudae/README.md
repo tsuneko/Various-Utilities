@@ -14,3 +14,5 @@ Remilia Scarlet - Touhou Project (Windows Canon)
 3. Run `generate_commands.py`
 
 4. From the `commands.txt` file, copy and paste the `$l` commands for likelist, `$note` commands for notes and `$sm note` command for sorting. The notes must be specified for ordering of notes, and so the sort command will only work with two or more claims.
+
+5. The `ownedlist.txt` file is created with owned characters which are on the list. It has no purpose apart from interest at this time.
