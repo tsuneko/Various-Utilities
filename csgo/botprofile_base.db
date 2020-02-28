@@ -1,0 +1,77 @@
+Default
+	Skill = 50
+	Aggression = 50
+	Teamwork = 75
+	WeaponPreference = ak47
+	WeaponPreference = m4a1
+	Cost = 0
+	Difficulty = NORMAL
+	VoicePitch = 100
+	Skin = 0
+	ReactionTime = 0
+	AttackDelay = 0
+	AimFocusInitial = 0.0
+	AimFocusDecay = 0.1
+	AimFocusOffsetScale = 0.0
+	AimfocusInterval = 0.0
+	LookAngleMaxAccelNormal = 2000.0
+	LookAngleStiffnessNormal = 100.0
+	LookAngleDampingNormal = 25.0
+	LookAngleMaxAccelAttacking = 3000.0
+	LookAngleStiffnessAttacking = 150.0
+	LookAngleDampingAttacking = 30.0
+End
+
+// weapon preference templates
+Template Rifle
+	WeaponPreference = ak47
+	WeaponPreference = m4a1
+End
+
+Template Sniper
+	WeaponPreference = awp
+End
+
+// skill templates
+Template Expert
+	Skill = 100
+	Rank = 1800
+	Aggression = 100
+	Cost = 4
+	Difficulty = EXPERT
+	VoicePitch = 85
+End
+
+Template Hard
+	Skill = 75
+	Rank = 1300
+	Aggression = 100
+	Cost = 3
+	Difficulty = HARD
+	VoicePitch = 94
+End
+
+Template Normal
+	Skill = 50
+	Rank = 1000
+	Aggression = 30
+	Cost = 2
+	Difficulty = NORMAL
+End
+
+Template Easy
+	Skill = 5
+	Rank = 600
+	Aggression = 10
+	Cost = 1
+	Difficulty = EASY
+	VoicePitch = 110
+End
+
+// Template Bot
+// Easy Yuri
+// 	VoicePitch = 110
+// End
+
+// Generate Bots Here
+
