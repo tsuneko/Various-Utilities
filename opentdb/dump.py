@@ -22,10 +22,8 @@ while True:
 print("done")
         
 print("writing to disk...")
-
 f = open("dump.txt","w",encoding="utf8")
 for q in dump:
     f.write(q+"\n")
 f.close()
-
 print("done")
