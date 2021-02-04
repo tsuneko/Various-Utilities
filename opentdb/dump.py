@@ -1,31 +1,31 @@
 import urllib.request, json, html
 
-n = 0
+print("getting token...")
+token = ""
+with urllib.request.urlopen("https://opentdb.com/api_token.php?command=request") as url:
+    token = json.loads(url.read().decode())["token"]
+print("done")
 
+print("getting questions...")
 dump = set()
-f = open("opentdb_dump.txt", "r", encoding="utf8")
-for l in f.readlines():
-    dump.add(l.rstrip())
-    n += 1
-f.close()
+a = 50
+while True:
+    with urllib.request.urlopen("https://opentdb.com/api.php?amount=" + str(a) + "&token=" + token) as url:
+        data = json.loads(url.read().decode())
+        if int(data["response_code"]) != 0:
+            if a == 1:
+                break
+            else:
+                a = a//2
+        for i in range(len(data["results"])):
+            dump.add(html.unescape(data["results"][i]["question"] + ": " + data["results"][i]["correct_answer"]))
+print("done")
+        
+print("writing to disk...")
 
-try:
-    while True:
-        with urllib.request.urlopen("https://opentdb.com/api.php?amount=100") as url:
-            data = json.loads(url.read().decode())
-            for i in range(len(data["results"])):
-                s = data["results"][i]["question"] + ": " + data["results"][i]["correct_answer"]
-                s = html.unescape(s)
-                if s not in dump:
-                    dump.add(s)
-                    n += 1
-                    print(n)
-except:
-    pass
-
-print("writing to file...")
-f = open("opentdb_dump.txt","w", encoding="utf8")
+f = open("dump.txt","w",encoding="utf8")
 for q in dump:
     f.write(q+"\n")
 f.close()
+
 print("done")
