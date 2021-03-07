@@ -7,8 +7,9 @@ Basic python script to format input to [akochan-reviewer](https://github.com/Equ
 Directory structure is above akochan-reviewer, hence the `cd akochan-reviewer` in the command line.
 
 **default review.txt**
-`en=true`
-`viewer=true`
+
+```en=true
+viewer=true```
 
 ## review.bat
 
