@@ -15,8 +15,6 @@ if os.path.isfile("review.txt"):
                 settings[keys[0]] = False
     f.close()
 else: 
-    p = subprocess.Popen("set OMP_NUM_THREADS=8", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    p.wait()
     f = open("review.txt", "w")
     f.write("en=true\nviewer=true")
     f.close()
