@@ -8,8 +8,10 @@ Directory structure is above akochan-reviewer, hence the `cd akochan-reviewer` i
 
 **default review.txt**
 
-```en=true
-viewer=true```
+```
+en=true
+viewer=true
+```
 
 ## review.bat
 
