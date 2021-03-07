@@ -6,9 +6,6 @@ Basic python script to format input to [akochan-reviewer](https://github.com/Equ
 
 Directory structure is above akochan-reviewer, hence the `cd akochan-reviewer` in the command line.
 
-Usage:
-Edit file `review.txt` which is generated on first run. Paste url to replay.
-
 **default review.txt**
 `en=true`
 `viewer=true`
