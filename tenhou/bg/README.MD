@@ -1,3 +1,3 @@
-Just storing my Tenhou BG
+Just storing my Tenhou BGs
 
-Resolution: 1600x1150px
+HTML5 Resolution: 1600x1150px
