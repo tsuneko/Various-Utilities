@@ -1,18 +1,9 @@
-### Windows Only
+### Note: Windows Only
 
-## review.py
+Very basic script to format input to [akochan-reviewer](https://github.com/Equim-chan/akochan-reviewer) for those who are not used to using command line.
 
-Basic python script to format input to [akochan-reviewer](https://github.com/Equim-chan/akochan-reviewer). This script saves a very small amount of time spent typing, assuming that the same flags are provided each time. At the moment, the only supported flags are `--lang en` and `--without viewer`.
-
-Directory structure is above akochan-reviewer, hence the `cd akochan-reviewer` in the command line.
-
-**default review.txt**
-
-```
-en=true
-viewer=true
-```
-
-## review.bat
-
-If python is not installed, use this batch file instead. It either needs to sit in the akochan directory, or it needs to cd to it.
+Usage:
+1. Download the latest version of akochan-reviewer. For convenience, the download link for v5 is [here](https://github.com/Equim-chan/akochan-reviewer/releases/download/v0.5.0/akochan-reviewer-v0.5.0-windows-x86_64.zip)
+2. Extract the zip file
+3. Right click this [link](https://raw.githubusercontent.com/tsuneko/Various-Utilities/master/akochan-reviewer/review.bat) and click Save-As, and save in the same directory as akochan-reviewer
+4. 
